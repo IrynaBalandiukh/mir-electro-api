@@ -18,16 +18,17 @@ Before you begin, ensure you have the following installed on your development ma
 `git clone https://github.com/IrynaBalandiukh/mir-electro-api.git`
 
 2. Install project dependencies:
+`cd mir-electro-api`
 `npm install`
 
-4. Create a .env file in the project root directory and define the following environment variables:
+4. Create a `.env` file in the project root directory and define the following environment variables:
 
-PORT
-DB_USERNAME
-DB_PASSWORD
-DB_HOST
-DB_PORT
-DB_NAME
+- PORT
+- DB_USERNAME
+- DB_PASSWORD
+- DB_HOST
+- DB_PORT
+- DB_NAME
 
 5. Start the API server:
 `npm run dev`
