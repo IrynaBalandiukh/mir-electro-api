@@ -15,12 +15,9 @@ Before you begin, ensure you have the following installed on your development ma
 ## Getting Started
 
 1. Clone the repository to your local machine:
-`git clone https://github.com/IrynaBalandiukh/mir-electro.git`
+`git clone https://github.com/IrynaBalandiukh/mir-electro-api.git`
 
-2. Navigate to the project directory:
-`cd backend`
-
-3. Install project dependencies:
+2. Install project dependencies:
 `npm install`
 
 4. Create a .env file in the project root directory and define the following environment variables:
