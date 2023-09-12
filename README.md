@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This is a simple Express.js API project utilizing Sequelize as the Object-Relational Mapping (ORM) tool for interacting with a relational database. The API is designed to handle user-related operations and can serve as a foundation for building more complex applications.
+This is a MIR-electro Express.js API project utilizing Sequelize for interacting with a relational database. The API is designed to handle user-related operations and can serve as a foundation for building more complex applications.
 
 ## Prerequisites
 
