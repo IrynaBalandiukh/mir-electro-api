@@ -11,17 +11,17 @@ const PORT = process.env.PORT || 5000;
 
 const app = express();
 
-app.use(cors()); // Дозволяємо запити з інших доменів
-app.use(express.json()); // Встановлюємо middleware для обробки запитів, які мають тіло у форматі JSON
+app.use(cors()); // Allow requests from other domains
+app.use(express.json()); // Install middleware for processing requests that have a body in JSON format
 
-// Підключаємо Sequelize
+// Connect Sequelize
 
 const sequelize = initDB();
 
 sequelize.authenticate();
 sequelize.sync({ alter: true });
 
-// Встановлюємо маршрут для обробки запитів до '/api/user' та вказуємо, що всі такі запити будуть опрацьовуватися за допомогою userRouter
+// We set the route for processing requests to '/api/user' and indicate that all such requests will be processed using userRouter
 app.use('/api/user', userRouter); 
 
 app.listen(PORT, () => {

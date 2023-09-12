@@ -5,8 +5,8 @@ import { getAllUsersController } from '../User/controllers/getAll.controller';
 
 export const userRouter = Router();
 
-// Маршрут POST '/' для створення нового користувача
+// Route POST '/' for creating new user
 userRouter.post('/', createUserController);
 
-// Маршрут GET '/' для отримання всіх користувачів
+// Route GET '/' to get all users
 userRouter.get('/', getAllUsersController);

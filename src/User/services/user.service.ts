@@ -3,20 +3,20 @@ import { User } from '../../models/User';
 type CreateOptions = Pick<User, 'name' | 'email' | 'phone'>;
 
 export class UserService {
-  // Метод для створення нового користувача в базі даних на основі переданих опцій
+  // A method to create a new user in the database based on the passed options
   create(options: CreateOptions) {
     return User.create(options);
   }
 
-  // Метод для отримання всіх користувачів із бази даних
+  // A method to retrieve all users from a database
   findAll() {
     return User.findAll();
   }
 
-  // Метод для отримання користувача за адресою електронної пошти
+  // A method to get a user by email address
   findByEmail(email: string) {
     return User.findOne({
-      where: { email }, // Умова пошуку за електронною поштою
+      where: { email },
     })
   };
 }
